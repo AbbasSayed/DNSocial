@@ -64,5 +64,15 @@ namespace DNSocial.Api.Controllers.V1
 
             return result.IsError ? this.HandleErrorResponse(result.Errors) : NoContent();
         }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public async Task<IActionResult> DeleteUserProfile(string id)
+        {
+            var command = new DeleteUserProfileCommand(Guid.Parse(id));
+            var response = await _mediator.Send(command);
+
+            return response.IsError ? this.HandleErrorResponse(response.Errors) : NoContent();
+        }
     }
 }
