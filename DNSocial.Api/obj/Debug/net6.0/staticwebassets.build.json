@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "REjyMAfE8Hbl/q6Vsy56Ti2TnbfvnOQzMTmd7XaW0J4=",
+  "Source": "DNSocial.Api",
+  "BasePath": "_content/DNSocial.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

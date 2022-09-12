@@ -1,0 +1,17 @@
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\bin\Debug\net6.0\DNSocial.Application.deps.json
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\bin\Debug\net6.0\DNSocial.Application.dll
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\bin\Debug\net6.0\DNSocial.Application.pdb
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\obj\Debug\net6.0\DNSocial.Application.csproj.AssemblyReference.cache
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\obj\Debug\net6.0\DNSocial.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\obj\Debug\net6.0\DNSocial.Application.AssemblyInfoInputs.cache
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\obj\Debug\net6.0\DNSocial.Application.AssemblyInfo.cs
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\obj\Debug\net6.0\DNSocial.Application.csproj.CoreCompileInputs.cache
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\obj\Debug\net6.0\DNSocial.Application.dll
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\obj\Debug\net6.0\refint\DNSocial.Application.dll
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\obj\Debug\net6.0\DNSocial.Application.pdb
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\obj\Debug\net6.0\ref\DNSocial.Application.dll
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\bin\Debug\net6.0\DNSocial.Dal.dll
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\bin\Debug\net6.0\DNSocial.Domain.dll
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\bin\Debug\net6.0\DNSocial.Dal.pdb
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\bin\Debug\net6.0\DNSocial.Domain.pdb
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Application\obj\Debug\net6.0\DNSocial.Application.csproj.CopyComplete
