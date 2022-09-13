@@ -1,3 +1,4 @@
+using DNSocial.Api.Filters;
 using DNSocial.Api.Options;
 using DNSocial.Application.Options;
 using DNSocial.Application.UserProfiles.Queries;
@@ -16,7 +17,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(config =>
+{
+    config.Filters.Add(typeof(DNSocialExceptionHandler));
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

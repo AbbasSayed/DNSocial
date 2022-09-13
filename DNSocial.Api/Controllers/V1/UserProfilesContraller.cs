@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace DNSocial.Api.Controllers.V1
 {
     [ApiVersion("1.0")]
-    [Route("api/v{version:apiVersion}/[controller]")]
+    [Route(ApiRouts.BaseRoute)]
     [ApiController]
     public class UserProfilesController : ControllerBase
     {
@@ -35,7 +35,8 @@ namespace DNSocial.Api.Controllers.V1
 
 
         [HttpGet]
-        [Route("{id}")]
+        [Route(ApiRouts.UserProfiles.IdRoute)]
+        [ValidateGuid("id")]
         public async Task<IActionResult> GetById(string id)
         {
             var userProfile = await _mediator.Send<UserProfile>(new GetUserProfileByIdQuery(Guid.Parse(id)));
@@ -59,7 +60,8 @@ namespace DNSocial.Api.Controllers.V1
         }
 
         [HttpPatch]
-        [Route("{id}")]
+        [Route(ApiRouts.UserProfiles.IdRoute)]
+        [ValidateGuid("id")]
         public async Task<IActionResult> UpdateUserProfile(string id, [FromBody] UpdateUserProfileRequest request)
         {
             var updateUserProfilecommand = _mapper.Map<UpdateUserProfileCommand>(request);
@@ -70,7 +72,8 @@ namespace DNSocial.Api.Controllers.V1
         }
 
         [HttpDelete]
-        [Route("{id}")]
+        [Route(ApiRouts.UserProfiles.IdRoute)]
+        [ValidateGuid("id")]
         public async Task<IActionResult> DeleteUserProfile(string id)
         {
             var command = new DeleteUserProfileCommand(Guid.Parse(id));
