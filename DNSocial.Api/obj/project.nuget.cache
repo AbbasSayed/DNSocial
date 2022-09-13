@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BsbxWTh5+dqw+5dh2I3F1AFYjfwz6bd9GL0RZNOulbNnyLEY/B0XPqUuPt/UJX0WMwnpBwxdEwUzGiOlQFyzVA==",
+  "dgSpecHash": "BSdyyQZhC9eUfE8R9+GCbvp2qiqXNDemFhzlGjIg+fRXVH99+zBcygiZ2tSDTXfL/OmbHbFTeR4SULdcJ2xsqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\RX\\Documents\\Code\\AspNetCore\\DNSocial\\DNSocial.Api\\DNSocial.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RX\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\RX\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\RX\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Users\\RX\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\RX\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\RX\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

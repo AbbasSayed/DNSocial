@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "60lwdt1H5jL7k38LVQvzCD+oxVGr83Lf2livdrh5GsLznmQIHIq4gsxXryXk/oxWUoo1PMBJDYteYu87Qt+zHQ==",
+  "dgSpecHash": "O9Ufvbme1YrxDzoflLAdW7xgTo+ahKLSYkpDH0qUpxWkmREGrScsRsc9HFdLsJnb4HmanKM+c6NB6Xvo4pp/iQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\RX\\Documents\\Code\\AspNetCore\\DNSocial\\DNSocial.Domain\\DNSocial.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\RX\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -49,8 +49,12 @@ namespace DNSocial.Api.Controllers.V1
         public async Task<IActionResult> CreateUserProfile([FromBody] CreateUserProfileRequest request)
         {
             var createUserProfileCommand = _mapper.Map<CreateUserProfileCommand>(request);
-            var userProfile = await _mediator.Send<UserProfile>(createUserProfileCommand);
-            var userProfileResponse = _mapper.Map<UserProfileResponse>(userProfile);
+            var result = await _mediator.Send<OperationResult<UserProfile>>(createUserProfileCommand);
+            if (result.IsError)
+            {
+                return this.HandleErrorResponse(result.Errors);
+            }
+            var userProfileResponse = _mapper.Map<UserProfileResponse>(result.Payload);
             return CreatedAtAction(nameof(GetById), new { id = userProfileResponse.UserProfileId }, userProfileResponse);
         }
 

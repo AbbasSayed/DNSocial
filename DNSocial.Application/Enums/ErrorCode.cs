@@ -11,5 +11,7 @@ namespace DNSocial.Application.Enums
         NotFound = 404,
         ServerError = 500,
         UnknownError = 999,
+
+        ValidationError = 101,
     }
 }

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Kyqdgd2Sj2/xmlQ0Ra881yFeYONdYXJbQeFgkF9G4TWLVTwJ8XECdTDec8oCLzWKEvC6rAJBRlLzjDrRNdTzPA==",
+  "dgSpecHash": "mzxKcHmf/aqbC3P+IiynMG6/2BIFmfH7elW+xagnMuFwFXrkS9cu4yhoZ4q7kpHDW5TJljCKZ8N4xuo+QuY6rw==",
   "success": true,
   "projectFilePath": "C:\\Users\\RX\\Documents\\Code\\AspNetCore\\DNSocial\\DNSocial.Dal\\DNSocial.Dal.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\RX\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Users\\RX\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\RX\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.8\\microsoft.aspnetcore.cryptography.internal.6.0.8.nupkg.sha512",
     "C:\\Users\\RX\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.8\\microsoft.aspnetcore.cryptography.keyderivation.6.0.8.nupkg.sha512",

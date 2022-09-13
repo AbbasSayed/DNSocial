@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5aUt+G5Bg1Wc0YbqXgp8v0cVly3++YYDcmIJHPbx/BzeUY9/jtIDEYOqOI1RsVbsN5ZCo5t400PFaqY4vGv1/w==",
+  "dgSpecHash": "yYfx/vq97PdsIPsvuz4OPXuEVdxkUEcvtwBx+8FKu6E9TeyurK8Qpb1RW4tFnyoGiOtazYJNTwki9nn2EVnRKw==",
   "success": true,
   "projectFilePath": "C:\\Users\\RX\\Documents\\Code\\AspNetCore\\DNSocial\\DNSocial.Application\\DNSocial.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\RX\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Users\\RX\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\RX\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\RX\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.8\\microsoft.aspnetcore.cryptography.internal.6.0.8.nupkg.sha512",

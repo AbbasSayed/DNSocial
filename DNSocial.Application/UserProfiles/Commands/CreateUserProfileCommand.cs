@@ -1,4 +1,5 @@
-﻿using DNSocial.Domain.Aggregates.UserProfileAggregate;
+﻿using DNSocial.Application.Models;
+using DNSocial.Domain.Aggregates.UserProfileAggregate;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DNSocial.Application.UserProfiles.Commands
 {
-    public class CreateUserProfileCommand : IRequest<UserProfile>
+    public class CreateUserProfileCommand : IRequest<OperationResult<UserProfile>>
     {
         public string FirstName { get;  set; }
         public string LastName { get; set; }
