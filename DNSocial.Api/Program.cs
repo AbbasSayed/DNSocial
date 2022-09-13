@@ -60,7 +60,7 @@ builder.Services.AddAutoMapper(typeof(Program), typeof(GetAllUserProfilesQuery))
 var jwtSettings = new JwtSettings();
 builder.Configuration.Bind(nameof(JwtSettings), jwtSettings);
 
-var jwtSection = builder.Configuration.GetSection(nameof(JwtSettings));
+var jwtSection = builder.Configuration.GetSection("JwtSettings");
 builder.Services.Configure<JwtSettings>(jwtSection);
 
 builder.Services.AddAuthentication(a =>

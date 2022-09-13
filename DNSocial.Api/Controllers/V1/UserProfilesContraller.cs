@@ -3,11 +3,13 @@ using DNSocial.Api.Contracts.UserProfiles.Requests;
 using DNSocial.Api.Contracts.UserProfiles.Responses;
 using DNSocial.Api.Filters;
 using DNSocial.Application.Models;
+using DNSocial.Application.Options;
 using DNSocial.Application.UserProfiles.Commands;
 using DNSocial.Application.UserProfiles.Queries;
 using DNSocial.Domain.Aggregates.UserProfileAggregate;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace DNSocial.Api.Controllers.V1
 {

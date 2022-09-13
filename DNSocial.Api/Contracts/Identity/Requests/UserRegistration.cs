@@ -1,20 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace DNSocial.Api.Contracts.Identity
+namespace DNSocial.Api.Contracts.Identity.Requests
 {
     public class UserRegistration
     {
         [Required]
         public string UserName { get; set; }
-        
-         [Required]
+
+        [Required]
         public string Password { get; set; }
-        
+
         [Required]
         [MinLength(3)]
         [MaxLength(50)]
         public string FirstName { get; set; }
-        
+
         [Required]
         [MinLength(3)]
         [MaxLength(50)]
