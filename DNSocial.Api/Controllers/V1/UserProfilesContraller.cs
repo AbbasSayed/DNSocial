@@ -74,7 +74,7 @@ namespace DNSocial.Api.Controllers.V1
         public async Task<IActionResult> DeleteUserProfile(string id)
         {
             var command = new DeleteUserProfileCommand(Guid.Parse(id));
-            var response = await _mediator.Send(command);
+            var response = await _mediator.Send<OperationResult<UserProfile>>(command);
 
             return response.IsError ? this.HandleErrorResponse(response.Errors) : NoContent();
         }

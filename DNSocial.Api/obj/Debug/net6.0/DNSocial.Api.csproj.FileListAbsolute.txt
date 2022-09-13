@@ -79,3 +79,4 @@ C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Api\bin\Debug\net6.0\Med
 C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Api\bin\Debug\net6.0\DNSocial.Application.dll
 C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Api\bin\Debug\net6.0\DNSocial.Application.pdb
 C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Api\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\RX\Documents\Code\AspNetCore\DNSocial\DNSocial.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

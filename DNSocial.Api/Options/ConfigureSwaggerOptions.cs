@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.ApiExplorer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -21,7 +22,14 @@ namespace DNSocial.Api.Options
             {
                 options.SwaggerDoc(description.GroupName, CreateVersionInfo(description));
             }
-           
+
+            var scheme = GetJwtSecurityScheme();
+            options.AddSecurityDefinition(scheme.Reference.Id, scheme);
+            options.AddSecurityRequirement(new OpenApiSecurityRequirement
+            {
+                {scheme, new string[0]}
+            });
+
         }
 
         private OpenApiInfo CreateVersionInfo(ApiVersionDescription description)
@@ -30,7 +38,7 @@ namespace DNSocial.Api.Options
             {
                 Title = "DNSocial",
                 Version = description.ApiVersion.ToString(),
-                Description = "Through this API you can access authors and their books.",
+                Description = "Through this API you can create user profile",
                 Contact = new()
                 {
                     Email = "eng.abbas@hotmail.com",
@@ -49,6 +57,24 @@ namespace DNSocial.Api.Options
             }
 
             return info;
+        }
+
+        private OpenApiSecurityScheme GetJwtSecurityScheme()
+        {
+            return new OpenApiSecurityScheme
+            {
+                Name = "JWT Authentication",
+                Description = "Provide a JWT Bearer",
+                In = ParameterLocation.Header,
+                Type = SecuritySchemeType.Http,
+                Scheme = "bearer",
+                BearerFormat = "JWT",
+                Reference = new OpenApiReference
+                {
+                    Id = JwtBearerDefaults.AuthenticationScheme,
+                    Type = ReferenceType.SecurityScheme
+                }
+            };
         }
     }
 }
