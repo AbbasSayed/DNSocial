@@ -8,6 +8,7 @@ using DNSocial.Application.UserProfiles.Commands;
 using DNSocial.Application.UserProfiles.Queries;
 using DNSocial.Domain.Aggregates.UserProfileAggregate;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
@@ -16,6 +17,7 @@ namespace DNSocial.Api.Controllers.V1
     [ApiVersion("1.0")]
     [Route(ApiRouts.BaseRoute)]
     [ApiController]
+    [Authorize]
     public class UserProfilesController : ControllerBase
     {
         private readonly IMapper _mapper;

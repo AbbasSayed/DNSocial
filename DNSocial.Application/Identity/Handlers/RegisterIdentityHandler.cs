@@ -72,7 +72,7 @@ namespace DNSocial.Application.Identity.Handlers
 
                 var profileInfo = BasicInfo.CreateBasicInfo(request.FirstName,
                     request.LastName,
-                    request.FirstName,
+                    request.UserName,
                     request.Phone,
                     request.DateOfBirth,
                     request.CurrentCity);

@@ -47,7 +47,14 @@ builder.Services.AddDbContext<DataContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
 
-builder.Services.AddIdentityCore<IdentityUser>().AddEntityFrameworkStores<DataContext>();
+builder.Services.AddIdentityCore<IdentityUser>(opt =>
+{
+    opt.Password.RequireDigit = false;
+    opt.Password.RequireNonAlphanumeric = false;
+    opt.Password.RequiredLength = 5;
+    opt.Password.RequireLowercase = false;
+    opt.Password.RequireUppercase = false;
+}).AddEntityFrameworkStores<DataContext>();
 
 #endregion
 
@@ -63,12 +70,13 @@ builder.Configuration.Bind(nameof(JwtSettings), jwtSettings);
 var jwtSection = builder.Configuration.GetSection("JwtSettings");
 builder.Services.Configure<JwtSettings>(jwtSection);
 
-builder.Services.AddAuthentication(a =>
-{
-    a.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    a.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    a.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(jwt =>
+builder.Services.AddAuthentication("Bearer"
+//{
+//    //a.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+//    //a.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+//    //a.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+//}
+).AddJwtBearer(jwt =>
 {
     jwt.SaveToken = true;
     jwt.TokenValidationParameters = new TokenValidationParameters
@@ -79,7 +87,7 @@ builder.Services.AddAuthentication(a =>
         ValidIssuer = jwtSettings.Issuer,
         ValidateAudience = true,
         ValidAudiences = jwtSettings.Audiences,
-        RequireExpirationTime = false,
+        // RequireExpirationTime = false,
         ValidateLifetime = true
     };
     jwt.Audience = jwtSettings.Audiences[0];
@@ -107,6 +115,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
